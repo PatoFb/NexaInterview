@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Layout</title>
+    <style>
+        /* Reset some default styles */
+        body, h1,h2,h3, p {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Set the background color of the page */
+        body {
+            background-color: #333;
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+
+        /* Style the header */
+        header {
+            background-color: #fff;
+            color: #333;
+            text-align: center;
+            padding: 30px;
+            margin: 10px;
+        }
+
+        /* Style the navigation */
+        nav {
+            background-color: #fff;
+            color: #333;
+            text-align: center;
+            padding: 30px;
+            margin: 10px;
+        }
+
+        .container {
+            overflow: hidden; /* Clear floats */
+            background-color: #333; /* Dark grey background for the container */
+            display: flex; /* Display children in a row */
+        }
+
+
+        /* Style the article section */
+        section {
+            width: 60%;
+            text-align: center;
+            background-color: #fff;
+            display: inline-block;
+            vertical-align: top;
+            padding-top: 30px;
+            margin: 10px;
+        }
+
+        .article {
+            background-color: #333;
+            color: #fff;
+            margin: 10px;
+            margin-top: 30px;
+            padding: 10px;
+            padding-top: 30px;
+        }
+
+        .card {
+            background-color: #fff;
+            color: #333;
+            margin: 20px;
+            padding: 30px;
+        }
+
+        /* Style the aside section */
+        aside {
+            width: 40%;
+            text-align: center;
+            background-color: #fff;
+            display: inline-block;
+            vertical-align: top;
+            padding: 30px;
+            margin: 10px;
+        }
+
+        footer {
+            background-color: #fff;
+            color: #333;
+            text-align: center;
+            padding: 30px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>header</p>
+    </header>
+    <nav>
+        <p>nav</p>
+    </nav>
+    <div class="container">
+        <section>
+            <p>section</p>
+            <div class="article">
+                <p>article</p>
+                <div class="card">
+                    <h1>h1,h2,h3</h1>
+                </div>
+                <div class="card">
+                    <p>p</p>
+                </div>
+            </div>
+        </section>
+        <aside>
+            <p>aside</p>
+        </aside>
+    </div>
+    <footer>
+        <p>footer</p>
+    </footer>
+</body>
+</html>
